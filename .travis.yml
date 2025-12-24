@@ -1,0 +1,42 @@
+language: cpp
+sudo: false
+
+# Cache platformio packages
+cache:
+  directories:
+    - "~/.platformio"
+
+# Environment matrix
+env:
+  matrix:
+    - PLATFORM=uno
+    - PLATFORM=nano
+    - PLATFORM=megaatmega2560
+    - PLATFORM=esp32dev
+    - PLATFORM=nodemcuv2
+
+# Install PlatformIO
+install:
+  - pip install --user platformio
+
+# Build all examples
+script:
+  - |
+    for example in examples/*/; do
+      echo "Building $(basename $example)..."
+      pio ci --lib="." --board=$PLATFORM "$example" || exit 1
+    done
+
+# Run tests
+after_success:
+  - pio test -e test_native
+
+# Deploy to GitHub Releases
+deploy:
+  provider: releases
+  api_key: $GITHUB_TOKEN
+  file_glob: true
+  file: dist/*.zip
+  skip_cleanup: true
+  on:
+    tags: true

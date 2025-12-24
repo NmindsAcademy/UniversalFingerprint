@@ -1,0 +1,81 @@
+#######################################
+# Syntax Coloring Map For UniversalFingerprint
+#######################################
+
+#######################################
+# Datatypes (KEYWORD1)
+#######################################
+UniversalFingerprint	KEYWORD1
+UF_SensorType	KEYWORD1
+UF_ErrorCode	KEYWORD1
+UF_LEDColor	KEYWORD1
+UF_SensorInfo	KEYWORD1
+UF_TemplateInfo	KEYWORD1
+UF_DatabaseStats	KEYWORD1
+
+#######################################
+# Methods and Functions (KEYWORD2)
+#######################################
+begin	KEYWORD2
+enroll	KEYWORD2
+identify	KEYWORD2
+verify	KEYWORD2
+deleteTemplate	KEYWORD2
+clearDatabase	KEYWORD2
+getSensorType	KEYWORD2
+getSensorModel	KEYWORD2
+getSensorVendor	KEYWORD2
+getCapacity	KEYWORD2
+getEnrolledCount	KEYWORD2
+isSlotOccupied	KEYWORD2
+findEmptySlot	KEYWORD2
+findLastEmptySlot	KEYWORD2
+getDatabaseStats	KEYWORD2
+printDatabaseInfo	KEYWORD2
+scanDatabase	KEYWORD2
+setLED	KEYWORD2
+setSecurity	KEYWORD2
+isFingerPresent	KEYWORD2
+setBaudRate	KEYWORD2
+sleep	KEYWORD2
+wake	KEYWORD2
+readRawTemplate	KEYWORD2
+writeRawTemplate	KEYWORD2
+getTemplateInfo	KEYWORD2
+getVersion	KEYWORD2
+errorToString	KEYWORD2
+sensorTypeToString	KEYWORD2
+ledColorToString	KEYWORD2
+
+#######################################
+# Constants (LITERAL1)
+#######################################
+UF_OK	LITERAL1
+UF_ERROR_COMM	LITERAL1
+UF_ERROR_NO_SENSOR	LITERAL1
+UF_ERROR_INVALID_ID	LITERAL1
+UF_ERROR_SLOT_FULL	LITERAL1
+UF_ERROR_TIMEOUT	LITERAL1
+UF_ERROR_SENSOR_BUSY	LITERAL1
+UF_ERROR_PACKET	LITERAL1
+UF_ERROR_NOT_ENROLLED	LITERAL1
+UF_ERROR_NO_FINGER	LITERAL1
+UF_ERROR_IMAGE_MESS	LITERAL1
+UF_ERROR_FEATURE_FAIL	LITERAL1
+UF_ERROR_IMAGE_FAIL	LITERAL1
+UF_ERROR_DUPLICATE_ID	LITERAL1
+UF_ERROR_NOT_SUPPORTED	LITERAL1
+UF_ERROR_INVALID_PARAM	LITERAL1
+UF_SENSOR_AS608	LITERAL1
+UF_SENSOR_R307	LITERAL1
+UF_SENSOR_GT511C3	LITERAL1
+UF_SENSOR_ZFM60	LITERAL1
+UF_SENSOR_ZFM20	LITERAL1
+UF_SENSOR_AUTO	LITERAL1
+UF_LED_RED	LITERAL1
+UF_LED_BLUE	LITERAL1
+UF_LED_PURPLE	LITERAL1
+UF_LED_GREEN	LITERAL1
+UF_LED_CYAN	LITERAL1
+UF_LED_YELLOW	LITERAL1
+UF_LED_WHITE	LITERAL1
